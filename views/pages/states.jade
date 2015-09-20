@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  div.statetitle
+    h1 #{towns[0].fullstate}
+  div.row
+    div.col-md-6
+    div.col-md-6.work
+      for town in towns
+        button.town #{town._id}
+        div.info
+          p.place Post Office
+          p.tab <strong>Address:</strong> #{town.postaddress}
+          p.tab <strong>Hours:</strong> #{town.posthours}
+          p.tab <strong>Phone:</strong> #{town.postphone}
+script(src="/javascripts/script.js")

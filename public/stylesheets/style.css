@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#titlepage {
+background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+color: white;
+} 
+
+.statetitle {
+	color: black;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.info {
+	background-color: white;
+	opacity: 0.5;
+	margin-bottom: 50px;
+	margin-left: 30px;
+	padding: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display:none;
+}
+
+h2 {
+	color: black;
+}
+
+p {
+	color: black;
+	font-size: 30px;
+}
+
+.tab { 
+	margin-left: 20px; 
+	font-size: 20px;
+}
+
+.town {
+	font-weight: bold;
+	text-align: center;
+}
+
+.place {
+	text-decoration: underline;
+	font-size: 25px;
+}
