@@ -1,8 +1,13 @@
 $(document).ready(function(){
 
-	$('.town').on('click', function(){
-		$(this).closest('.work').find('.info').slideToggle();
+	$('.townbtn').on('click', function(){
+		$(this).next().slideToggle();
 	});
 
+	$('.postoffice').on('click', function(){
+		$(this).closest('.info').find('.tab').slideToggle();
+	});
 
 });
+
+

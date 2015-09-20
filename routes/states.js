@@ -4,73 +4,73 @@ var db = require('monk')('localhost/towns-demo');
 var townsCollection = db.get('towns');
 
 router.get('/maine', function(req, res, next){	
-	townsCollection.find({state: "ME"}, function (err, data){
+	townsCollection.find({state: "ME"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/newhampshire', function(req, res, next) {
-	townsCollection.find({state: "NH"}, function (err, data){
+	townsCollection.find({state: "NH"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/vermont', function(req, res, next) {
-	townsCollection.find({state: "VT"}, function (err, data){
+	townsCollection.find({state: "VT"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/massachusetts', function(req, res, next) {
-	townsCollection.find({state: "MA"}, function (err, data){
+	townsCollection.find({state: "MA"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/connecticut', function(req, res, next) {
-	townsCollection.find({state: "CT"}, function (err, data){
+	townsCollection.find({state: "CT"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/newyandj', function(req, res, next) {
-  townsCollection.find({fullstate: "New York and New Jersey"}, function (err, data){
+  townsCollection.find({fullstate: "New York and New Jersey"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/pennsylvania', function(req, res, next) {
-	townsCollection.find({state: "PA"}, function (err, data){
+	townsCollection.find({state: "PA"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/maryland', function(req, res, next) {
-	townsCollection.find({state: "MD"}, function (err, data){
+	townsCollection.find({state: "MD"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/westvirginia', function(req, res, next) {
-	townsCollection.find({state: "WV"}, function (err, data){
+	townsCollection.find({state: "WV"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/virginia', function(req, res, next) {
-	townsCollection.find({state: "VA"}, function (err, data){
+	townsCollection.find({state: "VA"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/tennandncaro', function(req, res, next) {
-	townsCollection.find({fullstate: "Tennessee and North Carolina"}, function (err, data){
+	townsCollection.find({fullstate: "Tennessee and North Carolina"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });
 
 router.get('/georgia', function(req, res, next) {
-	townsCollection.find({state: "GA"}, function (err, data){
+	townsCollection.find({state: "GA"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
 	});
 });

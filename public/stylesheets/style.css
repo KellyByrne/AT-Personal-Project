@@ -8,6 +8,7 @@ a {
   color: #00B7FF;
 }
 
+
 #titlepage {
 background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
@@ -31,7 +32,11 @@ color: white;
 	padding: 10px;
 	padding-right: 15px;
 	padding-left: 15px;
-	display:none;
+	display: none;
+}
+
+ul {
+	list-style: none;
 }
 
 h2 {
@@ -46,14 +51,23 @@ p {
 .tab { 
 	margin-left: 20px; 
 	font-size: 20px;
+	display: none;
 }
 
-.town {
+.townbtn {
+	width: 300px ;
 	font-weight: bold;
 	text-align: center;
+	background-color: gold;
+	color: gray;
+	margin: 20px;
 }
 
 .place {
+	color: black;
 	text-decoration: underline;
 	font-size: 25px;
 }
+
+
+

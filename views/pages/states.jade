@@ -7,10 +7,24 @@ block content
     div.col-md-6
     div.col-md-6.work
       for town in towns
-        button.town #{town._id}
+        button.townbtn #{town._id}
         div.info
-          p.place Post Office
-          p.tab <strong>Address:</strong> #{town.postaddress}
-          p.tab <strong>Hours:</strong> #{town.posthours}
-          p.tab <strong>Phone:</strong> #{town.postphone}
+          button.place.postoffice Post Office
+            ul
+              li
+                p.tab <strong>Address:</strong> #{town.postaddress}
+              li
+                p.tab <strong>Hours:</strong> #{town.posthours}
+              li
+                p.tab <strong>Phone:</strong> #{town.postphone}
+          br      
+          button.place Laundromats
+            div.laundromat
+          br
+          button.place Showers
+            div.showers
+          br
+          button.place Grocery Stores
+            div.grocery
+        br
 script(src="/javascripts/script.js")
