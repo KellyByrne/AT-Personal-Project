@@ -1,7 +1,73 @@
-extends ../layout
+doctype html
+html
+  head
+    title AT Hike Planner
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src="https://maps.googleapis.com/maps/api/js")
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(src="/javascripts/script.js")
+  body#alttitlepage
+    nav.navbar.navbar-default.navbar-fixed-top#menu(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') 
+            img.icon(src="/images/icon1.jpg" alt="icon")
+            | Appalachian Trail Planner
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#', data-toggle='dropdown') States
+                ul.dropdown-menu 
+                  li 
+                    a(href="/states/maine") Maine
+                  li 
+                    a(href="/states/newhampshire") New Hampshire
+                  li 
+                    a(href="/states/vermont") Vermont
+                  li 
+                    a(href="/states/massachusetts") Massachusetts
+                  li 
+                    a(href="/states/connecticut") Connecticut
+                  li 
+                    a(href="/states/newyandj") New York and New Jersey
+                  li 
+                    a(href="/states/pennsylvania") Pennsylvania
+                  li 
+                    a(href="/states/maryland") Maryland
+                  li 
+                    a(href="/states/westvirginia") West Virginia
+                  li 
+                    a(href="/states/virginia") Virginia
+                  li 
+                    a(href="/states/tennandncaro") Tennessee and North Carolina
+                  li 
+                    a(href="/states/georgia") Georgia
+            li
+              a(href='/states/gear') Gear 
+            li
+              a(href='#') Contacts
 
-block content
-    
+  div.row
+    div.col-md-6
+      iframe(src="https://www.google.com/maps/d/embed?mid=zr8WQP2S9_Bw.kXIQfb_DMaRA")
+    div.col-md-6.work
+      div#intro
+        p The Appalachian National Scenic Trail, generally known as the Appalachian Trail or simply the A.T., 
+          |is a marked hiking trail in the eastern United States extending between Springer Mountain in Georgia and 
+          |Mount Katahdin in Maine. 
+        p The trail is approximately 2,200 miles (3,500 km)long, though the precise length changes over time as parts are modified or rerouted. 
+        p The trail passes through the states of Georgia, North Carolina, Tennessee, Virginia, West Virginia, Maryland, Pennsylvania, 
+          |New Jersey, New York, Connecticut, Massachusetts, Vermont, New Hampshire, and Maine.
+      
+script(src="/javascripts/script.js")
       
           
 

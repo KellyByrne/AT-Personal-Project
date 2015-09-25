@@ -1,30 +1,49 @@
 extends ../layout
 
 block content
-  div.statetitle
-    h1 #{towns[0].fullstate}
-  div.row
-    div.col-md-6
-    div.col-md-6.work
-      for town in towns
-        button.townbtn #{town._id}
-        div.info
-          button.place.postoffice Post Office
-            ul
-              li
-                p.tab <strong>Address:</strong> #{town.postaddress}
-              li
-                p.tab <strong>Hours:</strong> #{town.posthours}
-              li
-                p.tab <strong>Phone:</strong> #{town.postphone}
-          br      
-          button.place Laundromats
-            div.laundromat
+    div.row
+      div.col-md-4.statetitle
+        h1#pagename(data-statelat='#{towns[0].statelat}', data-statelng='#{towns[0].statelng}') #{towns[0].fullstate}
+    div.col-md-8
+    div.row
+      div.col-md-6
+        div#map
+      div.col-md-6.work
+        for town in towns
+          button(class='townbtn',data-townlat='#{town.townlat}', data-townlng='#{town.townlng}') #{town._id}, #{town.state}
+          div.info
+            button.place.milesofftrail Miles Off Trail
+              ul
+                li 
+                  p.tab.miles #{town.milesofftrail}
+            br
+            button.place.postoffice Post Office
+              ul
+                li
+                  p.tab.post <strong>Address:</strong> #{town.postaddress}
+                li
+                  p.tab.post <strong>Hours:</strong> #{town.posthours}
+                li
+                  p.tab.post <strong>Phone:</strong> #{town.postphone}
+            br      
+            button.place.laundromat Laundromats and Showers
+              ul 
+                for i in town.laundry
+                  li 
+                    button.tab.placename <strong>Place:</strong> #{i.laundryname} 
+                      ul
+                        li
+                          p.tab.wash <strong>Address:</strong> #{i.laundryaddress}
+                        li
+                          p.tab.wash <strong>Phone:</strong> #{i.laundryphone}
+                        li
+                          p.tab.wash <strong>Laundry Price:</strong> #{i.laundryprice}
+                        li
+                          p.tab.wash <strong>Shower Price:</strong> #{i.showerprice}      
+            br
+            button.place.grocery Resupply
+              ul 
+                li 
+                  p.tab.buy <strong>Address:</strong> #{town.grocery}
           br
-          button.place Showers
-            div.showers
-          br
-          button.place Grocery Stores
-            div.grocery
-        br
-script(src="/javascripts/script.js")
+  script(src="/javascripts/script.js")

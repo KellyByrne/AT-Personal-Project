@@ -3,24 +3,24 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src='js/bootstrap.min.js')
+    script(src="https://maps.googleapis.com/maps/api/js")
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
     script(src="/javascripts/script.js")
   body#titlepage
-    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+    nav.navbar.navbar-default.navbar-fixed-top#menu(role='navigation')
       .container
-        // Brand and toggle get grouped for better mobile display
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') Appalachian Trail Planner
-        // Collect the nav links, forms, and other content for toggling
+          a.navbar-brand(href='/') 
+            img.icon(src="/images/icon1.jpg" alt="icon")
+            | Appalachian Trail Planner
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
@@ -51,8 +51,8 @@ html
                   li 
                     a(href="/states/georgia") Georgia
             li
-              a(href='#') Services
+              a(href='/states/gear') Gear 
             li
-              a(href='#') Contact
+              a(href='#') Contacts
     block content
  

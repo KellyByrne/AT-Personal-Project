@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var db = require('monk')('localhost/towns-demo');
 var townsCollection = db.get('towns');
+var gearCollection = db.get('gear');
 
 router.get('/maine', function(req, res, next){	
 	townsCollection.find({state: "ME"}, {sort: {statenum: 1}}, function (err, data){
@@ -72,6 +73,12 @@ router.get('/tennandncaro', function(req, res, next) {
 router.get('/georgia', function(req, res, next) {
 	townsCollection.find({state: "GA"}, {sort: {statenum: 1}}, function (err, data){
 		res.render('pages/states', {towns: data});
+	});
+});
+
+router.get('/gear', function(req, res, next) {
+	gearCollection.find({}, function(err, data){
+	res.render('pages/gear', {gear: data})
 	});
 });
 

@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    div.col-md-12.statetitle
+      h1#pagename Gear List
+    div.row
+      div.col-md-3
+      div.col-md-6#gearlist
+        for item in gear
+          input#checkbox1(type='checkbox')
+          label(for='checkbox1') #{item.item}
+          br
+      div.col-md-3

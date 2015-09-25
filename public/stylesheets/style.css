@@ -6,8 +6,54 @@ body {
 
 a {
   color: #00B7FF;
+  font-family: 'Walter Turncoat';
 }
 
+.icon {
+	float: left;
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+	margin-top: -3px;
+	padding-bottom: 5px;
+
+}
+
+.placename {
+	color: black;
+	font-family: 'Walter Turncoat';
+	border: none;
+	background-color: white;
+	opacity: 1.0;
+	outline-style: none;
+}
+
+
+#map {
+	height: 450px;
+	width: 400px;
+	margin: 50px;
+	border-radius: 10px;
+}
+
+#intro {
+	height: 500px;
+	width: 450px;
+	margin: 50px;
+	margin-top: 100px;
+	border-radius: 10px;
+	background-color: white;
+	opacity: .7;
+}
+
+#intro p {
+	font-size: 20px;
+	font-family: 'Walter Turncoat';
+	color: gray;
+	margin: 8px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
 
 #titlepage {
 background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no-repeat center center fixed; 
@@ -18,21 +64,43 @@ background-size: cover;
 color: white;
 } 
 
+#alttitlepage {
+background: url("http://images.fineartamerica.com/images-medium-large-5/clingmans-dome-great-smoky-mountains-purple-mountains-majesty-dave-allen.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+color: white;
+} 
 .statetitle {
-	color: black;
-	font-weight: bold;
-	font-size: 50px;
+	font-family: 'Walter Turncoat';
+	color: gray;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: -40px;
+	opacity: .85;
+	padding-left: 60px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+}
+
+#pagename {
+	font-size: 20px;
 }
 
 .info {
 	background-color: white;
-	opacity: 0.5;
+	opacity: 0.75;
 	margin-bottom: 50px;
 	margin-left: 30px;
 	padding: 10px;
 	padding-right: 15px;
 	padding-left: 15px;
 	display: none;
+	text-align: center;
+	border-radius: 10px;
 }
 
 ul {
@@ -49,7 +117,7 @@ p {
 }
 
 .tab { 
-	margin-left: 20px; 
+	margin-left: 10px; 
 	font-size: 20px;
 	display: none;
 }
@@ -59,15 +127,40 @@ p {
 	font-weight: bold;
 	text-align: center;
 	background-color: gold;
+	outline-style: none;
 	color: gray;
 	margin: 20px;
+
 }
 
 .place {
 	color: black;
-	text-decoration: underline;
 	font-size: 25px;
+	border: none;
+	background-color: white;
+	opacity: 1.0;
+	outline-style: none;
+	font-family: 'Walter Turncoat'
 }
 
+iframe {
+	height: 600px;
+	width: 450px;
+	margin: 50px;
+}
 
+#menu {
+	opacity: 0.85;
+}
 
+#gearlist {
+	background-color: white;
+	opacity: 0.85;
+	padding: 20px;
+	padding-left: 50px;
+	margin: 10px;
+}
+
+label {
+	color: black;
+}
