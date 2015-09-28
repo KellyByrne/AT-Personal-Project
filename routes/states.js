@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var db = require('monk')(process.env.MONGOLAB_URI || 'localhost/towns-demo');
+console.log(db)
 var townsCollection = db.get('towns');
 var gearCollection = db.get('gear');
 
