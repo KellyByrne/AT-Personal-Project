@@ -146,9 +146,15 @@ p {
 iframe {
 	height: 600px;
 	width: 450px;
-	margin: 50px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
+.work {
+	margin-top: 5px;
+}
 #menu {
 	opacity: 0.85;
 }

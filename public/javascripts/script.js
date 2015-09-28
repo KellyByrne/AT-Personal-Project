@@ -17,7 +17,6 @@ $(document).ready(function(){
 
 	$('.postoffice').on('click', function(){
 		$(this).closest('.info').find('.post').slideToggle();
-
 	});
 
 	$('.laundromat').on('click', function(){
