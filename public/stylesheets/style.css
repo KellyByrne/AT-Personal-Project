@@ -6,7 +6,7 @@ body {
 
 a {
   color: #00B7FF;
-  font-family: 'Walter Turncoat';
+  font-family: 'news cycle';
 }
 
 .icon {
@@ -21,7 +21,7 @@ a {
 
 .placename {
 	color: black;
-	font-family: 'Walter Turncoat';
+	font-family: 'news cycle';
 	border: none;
 	background-color: white;
 	opacity: 1.0;
@@ -48,7 +48,7 @@ a {
 
 #intro p {
 	font-size: 20px;
-	font-family: 'Walter Turncoat';
+	font-family: 'news cycle';
 	color: gray;
 	margin: 8px;
 	padding-top: 5px;
@@ -73,7 +73,7 @@ background-size: cover;
 color: white;
 } 
 .statetitle {
-	font-family: 'Walter Turncoat';
+	font-family: 'news cycle';
 	color: gray;
 	background-color: white;
 	margin-top: 20px;
@@ -140,7 +140,7 @@ p {
 	background-color: white;
 	opacity: 1.0;
 	outline-style: none;
-	font-family: 'Walter Turncoat'
+	font-family: 'news cycle'
 }
 
 iframe {
