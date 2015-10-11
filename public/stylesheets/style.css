@@ -1,8 +1,4 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: white;
-}
+
 
 a {
   color: #00B7FF;
@@ -36,23 +32,45 @@ a {
 	border-radius: 10px;
 }
 
-#intro {
-	height: 500px;
-	width: 450px;
-	margin: 50px;
-	margin-top: 100px;
-	border-radius: 10px;
-	background-color: white;
-	opacity: .7;
+i {
+	margin: 0 0 0 45%;
 }
-
 #intro p {
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'news cycle';
-	color: gray;
+	color: white;
 	margin: 8px;
 	padding-top: 5px;
 	padding-left: 5px;
+}
+
+.bod {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 800px;
+  margin: 0 auto;
+  height: 550px;
+  padding: 40px;
+  background: rgba(255,255,255, .2);
+}
+
+section p {
+	font-size: 30px;
+}
+
+h1 {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 40px;
+  font-size: 80px;
+}
+
+.background {
+  color: #fff;
+  padding: 80px;
 }
 
 #titlepage {
@@ -61,33 +79,58 @@ background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover; 
-color: white;
+
 } 
 
-#alttitlepage {
-background: url("http://images.fineartamerica.com/images-medium-large-5/clingmans-dome-great-smoky-mountains-purple-mountains-majesty-dave-allen.jpg") no-repeat center center fixed; 
+.black {
+	font-size: 30px;
+	color: black;
+}
+
+.blacksm {
+	font-size: 15px;
+	color: black;
+}
+
+.background:nth-child(2) {
+	background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+
+}
+
+.background:nth-child(3){
+	background: url('http://static.tumblr.com/23f201c9a0e364ad55eb102115406be6/x9wmf2y/Epsms8tnb/tumblr_static_bg.jpeg') no-repeat fixed;
+	background-size: cover;
+}
+
+.background:nth-child(4) {
+background: url("http://www.nps.gov/grsm/planyourvisit/images/Clingmans-3-plaas_1.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover; 
 color: white;
 } 
+
 .statetitle {
 	font-family: 'news cycle';
 	color: gray;
 	background-color: white;
-	margin-top: 20px;
-	margin-left: -40px;
+	margin-top: 70px;
+	margin-left: 10px;
 	opacity: .85;
 	padding-left: 60px;
-	padding-top: 2px;
+	padding-top: 5px;
 	padding-right: 2px;
 	padding-bottom: 2px;
 	border-radius: 5px;
 }
 
 #pagename {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .info {
@@ -168,5 +211,5 @@ iframe {
 }
 
 label {
-	color: black;
+	color: gray;
 }
