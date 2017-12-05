@@ -74,7 +74,7 @@ h1 {
 }
 
 #titlepage {
-background: url("images/trail.jpg") no-repeat center center fixed; 
+background: url("/images/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -93,7 +93,7 @@ background-size: cover;
 }
 
 .background:nth-child(2) {
-	background: url("images/trail.jpg") no-repeat center center fixed; 
+	background: url("/images/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -102,12 +102,12 @@ background-size: cover;
 }
 
 .background:nth-child(3){
-	background: url('images/trail.jpg') no-repeat fixed;
+	background: url('/images/trail.jpg') no-repeat fixed;
 	background-size: cover;
 }
 
 .background:nth-child(4) {
-background: url("images/trail.jpg") no-repeat center center fixed; 
+background: url("/images/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
