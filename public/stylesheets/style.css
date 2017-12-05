@@ -93,7 +93,7 @@ background-size: cover;
 }
 
 .background:nth-child(2) {
-	background: url("http://theathiker.com/wp-content/uploads/2010/12/trail.jpg") no-repeat center center fixed; 
+	background: url("images/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -102,12 +102,12 @@ background-size: cover;
 }
 
 .background:nth-child(3){
-	background: url('http://static.tumblr.com/23f201c9a0e364ad55eb102115406be6/x9wmf2y/Epsms8tnb/tumblr_static_bg.jpeg') no-repeat fixed;
+	background: url('images/trail.jpg') no-repeat fixed;
 	background-size: cover;
 }
 
 .background:nth-child(4) {
-background: url("http://www.nps.gov/grsm/planyourvisit/images/Clingmans-3-plaas_1.jpg") no-repeat center center fixed; 
+background: url("images/trail.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
